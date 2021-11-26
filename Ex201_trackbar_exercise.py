@@ -21,7 +21,7 @@ while(1):
     image_copy = image.copy()    
     x = cv.getTrackbarPos('x','teste')
     y = cv.getTrackbarPos('y','teste')
-    cv.rectangle(image_copy, ((128 - x), (128 - y)), ((384 + x), (384 + y)), (0, 255, 0))
+    cv.rectangle(image_copy, ((128 - x), (128 - y)), ((384 + x), (384 + y)), (0, 255, 0), -1)
     cv.imshow("teste", image)
 
     # CALCULO DA AREA DO RETANGULO
@@ -56,28 +56,3 @@ while(1):
     cv.waitKey(1)
 
 cv.destroyAllWindows()
-
-# CRIANDO AS TRACKBARS
-# cv.createTrackbar('x1', 'teste', 0, 200, nothing)
-# cv.createTrackbar('y1', 'teste', 0, 200, nothing)
-# cv.createTrackbar('x2', 'teste', 300, 512, nothing)
-# cv.createTrackbar('y2', 'teste', 300, 512, nothing)
-
-# LAÇO PARA EXIBIÇÃO E ALTERAÇÃO DO RETANGULO
-# while(1):    
-
-#     image_copy = image.copy()
-    
-#     # x1 = cv.getTrackbarPos('x1','teste')
-#     # y1 = cv.getTrackbarPos('y1','teste')
-#     # x2 = cv.getTrackbarPos('x2','teste')
-#     # y2 = cv.getTrackbarPos('y2','teste')
-
-#     cv.rectangle(image_copy, 200, 200, (0, 255, 255))
-
-#     cv.imshow("teste", image)
-#     cv.imshow("teste", image_copy)
-
-#     cv.waitKey(1)
-
-# cv.destroyAllWindows()

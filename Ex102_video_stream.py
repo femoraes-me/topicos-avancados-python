@@ -48,11 +48,11 @@ while True:
     frame_green = cv2.merge([bit_0, green, bit_0])
     frame_red = cv2.merge([bit_0, bit_0, red])
 
-    cv2.imshow("Video", frame) 
+    #cv2.imshow("Video", frame) 
     #cv2.imshow("Video", frame_hsv) 
     #cv2.imshow("Video", frame_blue) 
     #cv2.imshow("Video", frame_green) 
-    #cv2.imshow("Video", frame_red) 
+    cv2.imshow("Video", frame_red) 
     
     stop = cv2.waitKey(1)
 
